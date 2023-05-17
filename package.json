@@ -1,0 +1,11 @@
+{
+  "name": "prefabs",
+  "version": "1.0.0",
+  "repository": "git@github.com:mightymeld/prefabs.git",
+  "devDependencies": {
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "^2.6.1",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.1"
+  }
+}
