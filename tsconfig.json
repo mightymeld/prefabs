@@ -1,5 +1,5 @@
 {
-  "include": ["*.jsx"],
+  "include": ["src/*.jsx"],
   "compilerOptions": {
     "jsx": "react-jsx",
     "checkJs": true

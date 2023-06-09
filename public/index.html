@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Prefab Preview</title>
+		<style>
+			html {
+				background: #eee;
+				font-family: -apple-system, sans-serif;
+			}
+
+			nav ul {
+				display: flex;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			nav li {
+				margin-right: 1em;
+			}
+
+			nav a {
+				text-decoration: none;
+			}
+
+			main {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 2em;
+				padding: 2em;
+			}
+
+			.item {
+				padding: 1em;
+				background: #fff;
+				border-radius: 3px;
+			}
+
+			h2 {
+				font-size: 1.2em;
+			}
+
+			.error {
+				color: red;
+				white-space: pre-wrap;
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script src="app.js"></script>
+	</body>
+</html>
