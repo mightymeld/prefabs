@@ -4,10 +4,10 @@
 
 Prefabs are React component templates with just enough props to work as a solid building block.
 
-| Empty JSX tags | With Prefabs                                                                                             |
-| -------------- | -------------------------------------------------------------------------------------------------------- |
-| `<Button />`   | <pre>`<Button>Button</Button>`</pre>                                                                     |
-| `<Alert />`    | <pre>`<Alert severity="warning">`<br>`  <AlertTitle>Title</AlertTitle>`<br>`  Description`<br>`</Alert>` |
+| Without      | With Prefabs                                                                                             |
+| ------------ | -------------------------------------------------------------------------------------------------------- |
+| `<Button />` | <pre>`<Button>Button</Button>`</pre>                                                                     |
+| `<Alert />`  | <pre>`<Alert severity="warning">`<br>`  <AlertTitle>Title</AlertTitle>`<br>`  Description`<br>`</Alert>` |
 
 ## File Format
 
