@@ -7,6 +7,7 @@ import * as HTML from './src/HTML'
 import * as MUI from './src/MUI'
 import * as MUI_Starter from './src/MUI_Starter'
 import * as React_Router from './src/React_Router'
+import * as Ant_Design from './src/Ant_Design'
 
 const PREFABS = {
 	Chakra,
@@ -14,7 +15,8 @@ const PREFABS = {
 	HTML,
 	MUI,
 	MUI_Starter,
-	React_Router
+	React_Router,
+	Ant_Design
 }
 
 const IGNORED = {
