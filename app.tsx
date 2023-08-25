@@ -8,6 +8,7 @@ import * as MUI from './src/MUI'
 import * as MUI_Starter from './src/MUI_Starter'
 import * as React_Router from './src/React_Router'
 import * as Ant_Design from './src/Ant_Design'
+import * as Tailwind from './src/Tailwind'
 
 const PREFABS = {
 	Chakra,
@@ -16,7 +17,8 @@ const PREFABS = {
 	MUI,
 	MUI_Starter,
 	React_Router,
-	Ant_Design
+	Ant_Design,
+	Tailwind
 }
 
 const IGNORED = {
