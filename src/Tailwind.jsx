@@ -187,41 +187,6 @@ export function Search() {
   );
 }
 
-export function Tab() {
-  let tab = 1;
-  const showTabOne = () => {
-    tab = 1;
-  };
-  const showTabTwo = () => {
-    tab = 2;
-  };
-
-  return (
-    <div className="p-2">
-      <div className="flex gap-2 border-b">
-        <div
-          onClick={showTabOne}
-          className={`cursor-pointer py-2 border-b-2 ${tab === 1 ? "border-green-700" : "border-transparent"
-            }`}
-        >
-          Tab One
-        </div>
-        <div
-          onClick={showTabTwo}
-          className={`cursor-pointer py-2 border-b-2 ${tab === 2 ? "border-green-700" : "border-transparent"
-            }`}
-        >
-          Tab Two
-        </div>
-      </div>
-      <div className="py-2">
-        {tab === 1 && <div className="">Content 1</div>}
-        {tab === 2 && <div className="">Content 2</div>}
-      </div>
-    </div>
-  );
-}
-
 export function Toggle() {
   return (
     <label className="relative inline-flex items-center cursor-pointer">
