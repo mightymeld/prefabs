@@ -5,25 +5,24 @@ import * as Chakra from './src/Chakra'
 import * as Chakra_Icons from './src/Chakra_Icons'
 import * as HTML from './src/HTML'
 import * as MUI from './src/MUI'
-import * as MUI_Starter from './src/MUI_Starter'
 import * as React_Router from './src/React_Router'
 import * as Ant_Design from './src/Ant_Design'
 import * as Tailwind from './src/Tailwind'
+import * as Radix from './src/Radix_UI'
 
 const PREFABS = {
 	Chakra,
 	Chakra_Icons,
 	HTML,
 	MUI,
-	MUI_Starter,
 	React_Router,
 	Ant_Design,
-	Tailwind
+	Tailwind,
+	Radix
 }
 
 const IGNORED = {
 	MUI: ['_Backdrop'],
-	MUI_Starter: ['_Dialog', '_Backdrop']
 }
 
 const domNode = document.getElementById('root')
