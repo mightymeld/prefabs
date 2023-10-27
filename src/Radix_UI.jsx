@@ -18,7 +18,6 @@ import {
     Quote,
     RadioGroup,
     Section,
-    Select,
     Separator,
     Slider,
     Strong,
@@ -136,36 +135,32 @@ export function _Quote() {
 }
 
 export function _RadioGroup() {
-    return <RadioGroup.Item value="1" />
+    return (
+        <RadioGroup.Root defaultValue="1">
+            <Flex gap="2" direction="column">
+                <Text as="label" size="2">
+                    <Flex gap="2">
+                        <RadioGroup.Item value="1" /> Default
+                    </Flex>
+                </Text>
+                <Text as="label" size="2">
+                    <Flex gap="2">
+                        <RadioGroup.Item value="2" /> Comfortable
+                    </Flex>
+                </Text>
+                <Text as="label" size="2">
+                    <Flex gap="2">
+                        <RadioGroup.Item value="3" /> Compact
+                    </Flex>
+                </Text>
+            </Flex>
+        </RadioGroup.Root>
+
+    )
 }
 
 export function _Section() {
     return <Section />
-}
-
-export function _Select() {
-    return (
-        <Select.Root defaultValue="apple">
-            <Select.Trigger />
-            <Select.Content>
-                <Select.Group>
-                    <Select.Label>Fruits</Select.Label>
-                    <Select.Item value="orange">Orange</Select.Item>
-                    <Select.Item value="apple">Apple</Select.Item>
-                    <Select.Item value="grape" disabled>
-                        Grape
-                    </Select.Item>
-                </Select.Group>
-                <Select.Separator />
-                <Select.Group>
-                    <Select.Label>Vegetables</Select.Label>
-                    <Select.Item value="carrot">Carrot</Select.Item>
-                    <Select.Item value="potato">Potato</Select.Item>
-                </Select.Group>
-            </Select.Content>
-        </Select.Root>
-
-    )
 }
 
 export function _Separator() {
