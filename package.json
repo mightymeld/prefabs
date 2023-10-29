@@ -22,5 +22,8 @@
 	},
 	"scripts": {
 		"start": "node server.mjs"
+	},
+	"dependencies": {
+		"@radix-ui/themes": "^2.0.0"
 	}
 }
