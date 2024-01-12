@@ -45,7 +45,11 @@ import {
 } from "@chakra-ui/react";
 
 export function _AspectRatio() {
-  return <AspectRatio maxW="400px" ratio={4 / 3} />;
+  return (
+    <AspectRatio maxW="400px" ratio={4 / 3} >
+      <Image src="https://picsum.photos/300/200" alt="Sample Image" />
+    </AspectRatio>
+  )
 }
 
 export function _Box() {
