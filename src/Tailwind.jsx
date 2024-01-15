@@ -2,7 +2,7 @@
 
 export function Accordion() {
   return (
-    <div className="">
+    <div>
       <details className="list-none bg-white ">
         <summary className="flex justify-between items-center list-none cursor-pointer p-3">
           <h4>What is Mightymeld</h4>
@@ -135,7 +135,7 @@ export function Avatar() {
 
 export function Button() {
   return (
-    <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm rounded">
+    <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm rounded shadow">
       Button
     </button>
   );
@@ -144,7 +144,7 @@ export function Button() {
 export function Button_Rounded() {
   return (
     <button
-      className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white"
+      className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white shadow"
     >
       Button
     </button>
@@ -201,6 +201,16 @@ export function Dialog() {
   );
 }
 
+export function Divider_With_Text() {
+  return (
+    <div className="flex items-center">
+      <span className="h-px flex-1 bg-black"></span>
+      <span className="shrink-0 px-6">Divider with text</span>
+      <span className="h-px flex-1 bg-black"></span>
+    </div>
+  );
+}
+
 export function Error_Alert() {
   return (
     <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 flex items-center justify-between" role="alert">
@@ -218,7 +228,7 @@ export function Error_Alert() {
             clip-rule="evenodd"
           ></path>
         </svg>
-        <span className="">Sorry, something went wrong please try again.</span>
+        <span >Sorry, something went wrong please try again.</span>
       </div>
       <button type="button" className="text-red-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -234,7 +244,7 @@ export function Success_Alert() {
     <div className="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 flex items-center justify-between" role="alert">
       <div className="flex items-center gap-2">
         <svg width="16" height="16" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#166534" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z" /></svg>
-        <span className="">Successful, your request has been updated</span>
+        <span >Successful, your request has been updated</span>
       </div>
       <button type="button" className="text-green-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -364,7 +374,7 @@ export function Floating_Header() {
               Career
             </button>
           </div>
-          <div className="">
+          <div >
             <button className="border py-2 px-4 bg-slate-600 hover:bg-slate-700 text-white rounded hidden lg:block">
               Join Community
             </button>
@@ -497,18 +507,29 @@ export function Icon() {
   );
 }
 
-export function IconButton() {
+export function Icon_Button_Left() {
   return (
     <button
       className='h-12 px-4 flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white'
     >
       <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
-      Download
+      <span >Download</span>
     </button>
   );
 }
 
-export function LoadingButton() {
+export function Icon_Button_Right() {
+  return (
+    <button
+      className='h-12 px-4 flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white'
+    >
+      <span >Download</span>
+      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
+    </button>
+  );
+}
+
+export function Loading_Button() {
   return (
     <button
       className='h-12 px-4 flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white'
@@ -538,9 +559,28 @@ export function Floating_Label() {
   );
 }
 
+export function Floating_Label_Outside() {
+  return (
+    <div className="relative">
+      <input
+        type="text"
+        id="floating_label"
+        className="block rounded px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+        placeholder=" "
+      />
+      <label
+        htmlFor="floating_label"
+        className="absolute text-sm text-slate-600 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+      >
+        User Name
+      </label>
+    </div>
+  );
+}
+
 export function Header() {
   return (
-    <header className="p-4 bg-slate-700">
+    <header className="p-4 bg-sky-700">
       <nav className="container mx-auto flex justify-between items-cente">
         <h1 className="text-2xl font-bold text-slate-50">LOGO</h1>
         <div className=" gap-10 text-slate-50 hidden lg:flex">
@@ -578,8 +618,23 @@ export function Heading3() {
   return <h3 className='mt-2'>Heading 3</h3>;
 }
 
-export function Horizontal_Stack() {
-  return <div className='flex space-x-4' />;
+export function Hero() {
+  return (
+    <section className="bg-slate-100">
+      <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
+        <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-slate-800 font-extrabold leading-7 md:leading-10">
+            Elevate your web development experience with Tailwind Prefabs
+          </h1>
+          <p className="mt-5 sm:mt-10 lg:w-10/12 text-slate-500 font-normal text-center text-sm sm:text-lg">The seamless component building blocks for effortlessly crafting your perfect web application </p>
+        </div>
+        <div className="flex justify-center items-center">
+          <button className="  bg-sky-700 transition duration-150 ease-in-out hover:bg-sky-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-sky-700 py-2 sm:py-4 text-sm">Get Started</button>
+          <button className="ml-4   bg-transparent transition duration-150 ease-in-out hover:border-sky-600 lg:text-xl lg:font-bold  hover:text-sky-600 rounded border border-sky-700 text-sky-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">Book Demo</button>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export function Image() {
@@ -707,7 +762,7 @@ export function Profile_Card() {
       </div>
       <div className="p-6 text-center">
         <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-         ELizabeth Holmes
+          ELizabeth Holmes
         </h4>
         <p className="block bg-clip-text font-sans text-base font-medium leading-relaxed ">
           Detective
@@ -775,6 +830,24 @@ export function Profile_Card() {
           </svg>
         </button>
       </div>
+    </div>
+  );
+}
+
+export function Progress_Bar() {
+  return (
+    <div>
+      <span id="ProgressLabel" className="sr-only">Loading</span>
+      <span
+        role="progressbar"
+        aria-labelledby="ProgressLabel"
+        aria-valuenow={80}
+        className="block rounded-full bg-gray-200"
+      >
+        <span className="block h-4 rounded-full bg-sky-600 text-center text-[10px]/4" style={{ width: "80%" }}>
+          <span className="font-bold text-white"> 80% </span>
+        </span>
+      </span>
     </div>
   );
 }
