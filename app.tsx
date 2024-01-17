@@ -21,8 +21,15 @@ const PREFABS = {
 	Radix
 }
 
-const IGNORED = {
-	MUI: ['_Backdrop'],
+const META = {
+	MUI: {
+		_Backdrop: {
+			ignore: true
+		},
+		_Typography_heading: {
+			width: 'full'
+		}
+	}
 }
 
 const domNode = document.getElementById('root')
@@ -31,9 +38,9 @@ root.render(<App />)
 
 function App() {
 	const url = new URL(window.location.href)
-	const prefabName = url.searchParams.get('prefab') || Object.keys(PREFABS)[0]
-	const prefab = PREFABS[prefabName]
-	if (!prefab) {
+	const collectionName = url.searchParams.get('prefab') || Object.keys(PREFABS)[0]
+	const collection = PREFABS[collectionName]
+	if (!collection) {
 		return <h1>Not found</h1>
 	}
 
@@ -44,27 +51,33 @@ function App() {
 					{Object.keys(PREFABS).map((name) => {
 						return (
 							<li key={name}>
-								<a href={`?prefab=${name}`}>{name}</a>
+								<a
+									className={collectionName === name ? 'selected' : undefined}
+									href={`?prefab=${name}`}
+								>
+									{name.replace(/_/g, ' ')}
+								</a>
 							</li>
 						)
 					})}
 				</ul>
 			</nav>
 			<main>
-				{Object.entries(prefab).map(([name, Component]: [string, any]) => {
+				{Object.entries(collection).map(([name, Component]: [string, any]) => {
+					const meta = META[collectionName]?.[name] || {}
+					if (meta.ignore) {
+						console.log(`Ignoring “${name}”`)
+						return null
+					}
 					return (
-						<div key={name}>
-							<h2>{name.replace(/_+/g, ' ').split('$')[0]}</h2>
+						<div key={name} className={meta.width === 'full' ? 'width-full' : undefined}>
+							<h2>{name.replace(/_+/g, ' ').trim().split('$')[0]}</h2>
 							<div className="item">
-								{IGNORED[prefabName]?.includes(name) ? (
-									<p className="error">Ignoring “{name}”</p>
-								) : (
-									<ErrorBoundary
-										fallbackRender={({ error: e }) => <p className="error">{e.message}</p>}
-									>
-										<Component />
-									</ErrorBoundary>
-								)}
+								<ErrorBoundary
+									fallbackRender={({ error: e }) => <p className="error">{e.message}</p>}
+								>
+									<Component />
+								</ErrorBoundary>
 							</div>
 						</div>
 					)

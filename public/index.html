@@ -13,7 +13,7 @@
 			nav ul {
 				display: flex;
 				list-style: none;
-				padding: 0;
+				padding: 2em;
 				margin: 0;
 			}
 
@@ -25,11 +25,22 @@
 				text-decoration: none;
 			}
 
+			nav a.selected {
+				text-decoration: underline;
+				text-decoration-color: rgb(0, 112, 243);
+				text-decoration-thickness: 2px;
+				text-underline-offset: 2px;
+			}
+
 			main {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
 				grid-gap: 2em;
 				padding: 2em;
+			}
+
+			.width-full {
+				grid-column: 1 / -1;
 			}
 
 			.item {
@@ -43,7 +54,7 @@
 			}
 
 			.error {
-				color: red;
+				color: rgb(174, 0, 0);
 				white-space: pre-wrap;
 				font-family: monospace;
 			}
