@@ -90,9 +90,11 @@ function App() {
 						return null
 					}
 					return (
-						<div key={name} className={meta.width === 'full' ? 'width-full' : undefined}>
-							<h2>{name.replace(/_+/g, ' ').trim().split('$')[0]}</h2>
-							<div className="item">
+						<div key={name} className={`item ${meta.width === 'full' ? 'width-full' : ''}`}>
+							<h2 className="item-title" title={name}>
+								{name.replace(/_+/g, ' ').trim().split('$')[0]}
+							</h2>
+							<div className="item-content">
 								<ErrorBoundary
 									fallbackRender={({ error: e }) => <p className="error">{e.message}</p>}
 								>
