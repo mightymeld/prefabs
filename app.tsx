@@ -22,7 +22,7 @@ const PREFABS = {
 }
 
 const IGNORED = {
-	MUI: ['_Backdrop'],
+	MUI: ['_Backdrop']
 }
 
 const domNode = document.getElementById('root')
@@ -44,7 +44,12 @@ function App() {
 					{Object.keys(PREFABS).map((name) => {
 						return (
 							<li key={name}>
-								<a href={`?prefab=${name}`}>{name}</a>
+								<a
+									className={prefabName === name ? 'selected' : undefined}
+									href={`?prefab=${name}`}
+								>
+									{name.replace(/_/g, ' ')}
+								</a>
 							</li>
 						)
 					})}
