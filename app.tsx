@@ -29,6 +29,29 @@ const META = {
 		_Typography_heading: {
 			width: 'full'
 		}
+	},
+	Tailwind: {
+		Accordion_2: {
+			width: 'full'
+		},
+		Card: {
+			width: 'full'
+		},
+		Feature_Card: {
+			width: 'full'
+		},
+		Header: {
+			width: 'full'
+		},
+		Hero: {
+			width: 'full'
+		},
+		Footer: {
+			width: 'full'
+		},
+		Floating_Header: {
+			ignore: true
+		}
 	}
 }
 
