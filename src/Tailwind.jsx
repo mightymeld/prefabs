@@ -153,7 +153,7 @@ export function Button_Rounded() {
 
 export function Card() {
   return (
-    <div className="bg-white rounded w-96 p-4 flex flex-col justify-between border shadow">
+    <div className="bg-white rounded w-80 p-4 flex flex-col justify-between border shadow">
       <div className="w-full h-56 rounded">
         <img src="https://source.unsplash.com/random/200x200" alt="image" className="w-full h-full rounded" />
       </div>

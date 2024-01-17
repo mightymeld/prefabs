@@ -34,9 +34,6 @@ const META = {
 		Accordion_2: {
 			width: 'full'
 		},
-		Card: {
-			width: 'full'
-		},
 		Feature_Card: {
 			width: 'full'
 		},
