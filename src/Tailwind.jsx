@@ -640,27 +640,27 @@ export function Header() {
 }
 
 export function Heading1() {
-  return <h1 className="text-6xl font-bold" >Heading 1</h1>;
+  return <h1 className="text-6xl font-bold font-serif" >Heading 1</h1>;
 }
 
 export function Heading2() {
-  return <h2 className="text-5xl font-bold" >Heading 2</h2>;
+  return <h2 className="text-5xl font-bold font-serif" >Heading 2</h2>;
 }
 
 export function Heading3() {
-  return <h3 className="text-4xl font-bold" >Heading 3</h3>;
+  return <h3 className="text-4xl font-bold font-serif" >Heading 3</h3>;
 }
 
 export function Heading4() {
-  return <h4 className="text-3xl font-bold" >Heading 4</h4>;
+  return <h4 className="text-3xl font-bold font-serif" >Heading 4</h4>;
 }
 
 export function Heading5() {
-  return <h5 className="text-2xl font-semibold" >Heading 5</h5>;
+  return <h5 className="text-2xl font-semibold font-serif" >Heading 5</h5>;
 }
 
 export function Heading6() {
-  return <h6 className="text-xl font-medium" >Heading 6</h6>;
+  return <h6 className="text-xl font-medium font-serif" >Heading 6</h6>;
 }
 
 export function Hero() {
