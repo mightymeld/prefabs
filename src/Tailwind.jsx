@@ -125,6 +125,109 @@ export function Accordion_2() {
   );
 }
 
+export function Alert_Error() {
+  return (
+    <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 flex items-center justify-between" role="alert">
+      <div className="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+          width="16" height="16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <span >Sorry, something went wrong please try again.</span>
+      </div>
+      <button type="button" className="text-red-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
+        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+      </button>
+    </div>
+  );
+}
+
+export function Alert_Notification() {
+  return (
+    <div aria-live="assertive" className="pointer-events-none inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
+      <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="flex items-start p-4">
+          <div className="flex-shrink-0">
+            <svg className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div className="ml-3 w-0 flex-1 pt-0.5">
+            <p className="text-sm font-medium text-gray-900">Successful</p>
+            <p className="mt-1 text-sm text-gray-500">Your request has been updated.</p>
+          </div>
+          <div className="ml-4 flex flex-shrink-0">
+            <button type="button" className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none">
+              <span className="sr-only">Close</span>
+              <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function Alert_Success() {
+  return (
+    <div className="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 flex items-center justify-between" role="alert">
+      <div className="flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#166534" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z" /></svg>
+        <span >Successful, your request has been updated</span>
+      </div>
+      <button type="button" className="text-green-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
+        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+      </button>
+    </div>
+  );
+}
+
+export function Alert_Warning() {
+  return (
+    <div className="p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 flex items-center justify-between" role="alert">
+      <div className="flex items-center gap-2">
+        <svg fill="#854d0e" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+          width="16" height="16" viewBox="0 0 478.125 478.125"
+          xmlSpace="preserve">
+          <g>
+            <g>
+              <g>
+                <circle cx="239.904" cy="314.721" r="35.878" />
+                <path d="M256.657,127.525h-31.9c-10.557,0-19.125,8.645-19.125,19.125v101.975c0,10.48,8.645,19.125,19.125,19.125h31.9
+    c10.48,0,19.125-8.645,19.125-19.125V146.65C275.782,136.17,267.138,127.525,256.657,127.525z"/>
+                <path d="M239.062,0C106.947,0,0,106.947,0,239.062s106.947,239.062,239.062,239.062c132.115,0,239.062-106.947,239.062-239.062
+    S371.178,0,239.062,0z M239.292,409.734c-94.171,0-170.595-76.348-170.595-170.596c0-94.248,76.347-170.595,170.595-170.595
+    s170.595,76.347,170.595,170.595C409.887,333.387,333.464,409.734,239.292,409.734z"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <span>Warning alert! You have been warned</span>
+      </div>
+      <button type="button" className="text-yello-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
+        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+      </button>
+    </div>
+  );
+}
+
 export function Avatar() {
   return (
     <div className="rounded-full w-16 h-16">
@@ -207,81 +310,6 @@ export function Divider_With_Text() {
       <span className="h-px flex-1 bg-black"></span>
       <span className="shrink-0 px-6">Divider with text</span>
       <span className="h-px flex-1 bg-black"></span>
-    </div>
-  );
-}
-
-export function Error_Alert() {
-  return (
-    <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 flex items-center justify-between" role="alert">
-      <div className="flex items-center gap-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          aria-hidden="true"
-          width="16" height="16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-        <span >Sorry, something went wrong please try again.</span>
-      </div>
-      <button type="button" className="text-red-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
-        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-        </svg>
-      </button>
-    </div>
-  );
-}
-
-export function Success_Alert() {
-  return (
-    <div className="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 flex items-center justify-between" role="alert">
-      <div className="flex items-center gap-2">
-        <svg width="16" height="16" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#166534" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z" /></svg>
-        <span >Successful, your request has been updated</span>
-      </div>
-      <button type="button" className="text-green-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
-        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-        </svg>
-      </button>
-    </div>
-  );
-}
-
-export function Warning_Alert() {
-  return (
-    <div className="p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 flex items-center justify-between" role="alert">
-      <div className="flex items-center gap-2">
-        <svg fill="#854d0e" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-          width="16" height="16" viewBox="0 0 478.125 478.125"
-          xmlSpace="preserve">
-          <g>
-            <g>
-              <g>
-                <circle cx="239.904" cy="314.721" r="35.878" />
-                <path d="M256.657,127.525h-31.9c-10.557,0-19.125,8.645-19.125,19.125v101.975c0,10.48,8.645,19.125,19.125,19.125h31.9
-    c10.48,0,19.125-8.645,19.125-19.125V146.65C275.782,136.17,267.138,127.525,256.657,127.525z"/>
-                <path d="M239.062,0C106.947,0,0,106.947,0,239.062s106.947,239.062,239.062,239.062c132.115,0,239.062-106.947,239.062-239.062
-    S371.178,0,239.062,0z M239.292,409.734c-94.171,0-170.595-76.348-170.595-170.596c0-94.248,76.347-170.595,170.595-170.595
-    s170.595,76.347,170.595,170.595C409.887,333.387,333.464,409.734,239.292,409.734z"/>
-              </g>
-            </g>
-          </g>
-        </svg>
-        <span>Warning alert! You have been warned</span>
-      </div>
-      <button type="button" className="text-yello-800 rounded-lg inline-flex items-center justify-center h-8 w-8 " aria-label="Close">
-        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-        </svg>
-      </button>
     </div>
   );
 }
@@ -663,34 +691,6 @@ export function Notice_Modal() {
         <div className="mt-4 flex items-center gap-x-5">
           <button type="button" className="rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">Accept</button>
           <button type="button" className="text-sm font-semibold leading-6 text-slate-900 shadow-sm ">Reject</button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export function Notification_Alert() {
-  return (
-    <div aria-live="assertive" className="pointer-events-none inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
-      <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-        <div className="flex items-start p-4">
-          <div className="flex-shrink-0">
-            <svg className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <div className="ml-3 w-0 flex-1 pt-0.5">
-            <p className="text-sm font-medium text-gray-900">Successful</p>
-            <p className="mt-1 text-sm text-gray-500">Your request has been updated.</p>
-          </div>
-          <div className="ml-4 flex flex-shrink-0">
-            <button type="button" className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none">
-              <span className="sr-only">Close</span>
-              <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
     </div>
