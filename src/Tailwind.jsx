@@ -164,11 +164,11 @@ export function Alert_Notification() {
             </svg>
           </div>
           <div className="ml-3 w-0 flex-1 pt-0.5">
-            <p className="text-sm font-medium text-gray-900">Successful</p>
-            <p className="mt-1 text-sm text-gray-500">Your request has been updated.</p>
+            <p className="text-sm font-medium text-slate-900">Successful</p>
+            <p className="mt-1 text-sm text-slate-500">Your request has been updated.</p>
           </div>
           <div className="ml-4 flex flex-shrink-0">
-            <button type="button" className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none">
+            <button type="button" className="inline-flex rounded-md bg-white text-slate-400 hover:text-slate-500 focus:outline-none">
               <span className="sr-only">Close</span>
               <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
@@ -244,12 +244,65 @@ export function Button() {
   );
 }
 
+export function Button_Plain() {
+  return (
+    <button
+      className="py-2 rounded hover:bg-sky-100 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-sky-800 text-sm"
+    >
+      Button
+    </button>
+  );
+}
+
+export function Button_Outline() {
+  return (
+    <button
+      className="py-2 rounded border border-sky-700 hover:border-sky-600 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-sky-800 text-sm"
+    >
+      Button
+    </button>
+  );
+}
+
 export function Button_Rounded() {
   return (
     <button
-      className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white shadow"
+      className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white shadow text-sm"
     >
       Button
+    </button>
+  );
+}
+
+export function Button_Icon_Left() {
+  return (
+    <button
+      className="h-12 px-4 flex rounded items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
+      <span >Download</span>
+    </button>
+  );
+}
+
+export function Button_Icon_Right() {
+  return (
+    <button
+      className="h-12 px-4 rounded flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
+    >
+      <span >Download</span>
+      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
+    </button>
+  );
+}
+
+export function Button_Loading() {
+  return (
+    <button
+      className="h-12 px-4 rounded flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
+    >
+      <div className="ml-2 animate-spin inline-block w-5 h-5 rounded-full border-t " ></div>
+      Loading
     </button>
   );
 }
@@ -280,23 +333,21 @@ export function Checkbox() {
 
 export function Dialog() {
   return (
-    <div className="relative flex flex-col gap-4 m-4 max-w-[450px] rounded-lg font-sans  bg-white text-base font-light leading-relaxed text-blue-gray-500 antialiased shadow-2xl p-4">
-      <div className="flex shrink-0 items-center text-2xl font-semibold leading-snug text-blue-gray-900 antialiased">
+    <div className="relative flex flex-col gap-4 m-4 max-w-[450px] rounded-lg bg-white text-base leading-relaxed text-sky-slate-500 antialiased shadow-2xl p-4">
+      <div className="flex shrink-0 items-center text-2xl font-semibold leading-snug text-sky-slate-900 antialiased">
         Dialog Title
       </div>
-      <div className="relative  text-base font-light leading-relaxed text-blue-gray-500 antialiased">
+      <div className="relative text-base leading-relaxed text-sky-slate-500 antialiased">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
         voluptas ducimus eaque commodi nam voluptates tenetur minima.
       </div>
-      <div className="flex gap-2 shrink-0 flex-wrap items-center justify-end text-blue-gray-500">
+      <div className="flex gap-2 shrink-0 flex-wrap items-center justify-end text-sky-slate-500">
         <button
-          className="middle center rounded-lg py-3 px-6 text-xs font-bold uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30"
+          className="py-2 rounded hover:bg-red-100 transition duration-300 ease-in-out px-6 font-semibold text-sm tracking-wider text-red-800"
         >
           Cancel
         </button>
-        <button
-          className="middle center rounded-lg bg-gradient-to-tr from-sky-600 to-sky-400 py-3 px-6 text-xs font-bold uppercase text-white shadow-md shadow-sky-500/20 transition-all hover:shadow-lg hover:shadow-sky-500/40 active:opacity-[0.85]"
-        >
+        <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm rounded shadow">
           Confirm
         </button>
       </div>
@@ -328,13 +379,14 @@ export function Feature_Card() {
               src="https://source.unsplash.com/random/200x200"
               alt=""
             />
-            <div className="mt-4 text-sky-600 text-center">
-              <h1 className="text-xl font-bold">Productivity</h1>
-              <p className="mt-4 text-gray-600">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                reprehenderit alias soluta quia excepturi facilis
+            <div className="py-4 text-sky-600 text-center flex flex-col gap-4">
+              <h1 className="text-xl font-bold">Easy Integration</h1>
+              <p className=" text-slate-600">
+                Integrate our prefab components effortlessly into your existing projects, enhancing functionality without the hassle.
               </p>
-              <button className="mt-8 mb-4 py-2 px-14 rounded-full bg-sky-600 text-white tracking-widest hover:bg-sky-500 transition duration-200">
+              <button
+                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold tracking-wider text-white shadow"
+              >
                 MORE
               </button>
             </div>
@@ -348,13 +400,14 @@ export function Feature_Card() {
               src="https://source.unsplash.com/random/200x200"
               alt=""
             />
-            <div className="mt-4 text-sky-600 text-center">
-              <h1 className="text-xl font-bold">Career</h1>
-              <p className="mt-4 text-gray-600">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                reprehenderit alias soluta quia excepturi facilis
+            <div className="py-4 text-sky-600 text-center flex flex-col gap-4">
+              <h1 className="text-xl font-bold">Diverse Selection</h1>
+              <p className=" text-slate-600">
+                Integrate our prefab components effortlessly into your existing projects, enhancing functionality without the hassle.
               </p>
-              <button className="mt-8 mb-4 py-2 px-14 rounded-full bg-sky-600 text-white tracking-widest hover:bg-sky-500 transition duration-200">
+              <button
+                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold tracking-wider text-white shadow"
+              >
                 MORE
               </button>
             </div>
@@ -368,13 +421,14 @@ export function Feature_Card() {
               src="https://source.unsplash.com/random/200x200"
               alt=""
             />
-            <div className="mt-4 text-sky-600 text-center">
-              <h1 className="text-xl font-bold">Engineering</h1>
-              <p className="mt-4 text-gray-600">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-                reprehenderit alias soluta quia excepturi facilis
+            <div className="py-4 text-sky-600 text-center flex flex-col gap-4">
+              <h1 className="text-xl font-bold">Optimized Performance</h1>
+              <p className=" text-slate-600">
+                Maintain high performance standards with components that are optimized for speed and efficiency
               </p>
-              <button className="mt-8 mb-4 py-2 px-14 rounded-full bg-sky-600 text-white tracking-widest hover:bg-sky-500 transition duration-200">
+              <button
+                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 inline font-semibold tracking-wider text-white shadow"
+              >
                 MORE
               </button>
             </div>
@@ -388,7 +442,7 @@ export function Feature_Card() {
 export function Floating_Header() {
   return (
     <header className="flex flex-col rounded-3xl">
-      <nav className="backdrop-blur-3xl text-sm border bg-black/5 rounded-2xl text-neutral-500 px-6 py-4 fixed top-3 left-1/2 transform -translate-x-1/2 w-11/12">
+      <nav className="backdrop-blur-3xl text-sm border bg-black/5 rounded-2xl text-neutral-500 px-6 py-4 left-1/2 transform -translate-x-1/2 w-11/12">
         <div className="flex justify-between items-center">
           <h1 className="uppercase font-bold text-black">Logo</h1>
           <div className=" gap-6 font-semibold text-black hidden lg:flex">
@@ -431,21 +485,21 @@ export function Footer() {
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 md:grid-cols-3">
           <div>
-            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase "> Resources </h3>
+            <h3 className="mb-6 text-sm font-semibold text-slate-900 uppercase "> Resources </h3>
             <ul>
               <li className="mb-4">Blog</li>
               <li>Prefabs</li>
             </ul>
           </div>
           <div>
-            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase "> Socials </h3>
+            <h3 className="mb-6 text-sm font-semibold text-slate-900 uppercase "> Socials </h3>
             <ul>
               <li className="mb-4">Github</li>
               <li>Discord</li>
             </ul>
           </div>
           <div>
-            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Company </h3>
+            <h3 className="mb-6 text-sm font-semibold text-slate-900 uppercase ">Company </h3>
             <ul>
               <li className="mb-4">Privacy Policy</li>
               <li >Terms &amp; Conditions</li>
@@ -453,14 +507,14 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <hr className="my-6 border-slate-200 sm:mx-auto lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center">
+        <span className="text-sm text-slate-500 sm:text-center">
           © 2022 LOGO. All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <button
-            className="text-gray-500 hover:text-gray-900 "
+            className="text-slate-500 hover:text-slate-900 "
           >
             <svg
               className="w-5 h-5"
@@ -476,7 +530,7 @@ export function Footer() {
             </svg>
           </button>
           <button
-            className="text-gray-500 hover:text-gray-900"
+            className="text-slate-500 hover:text-slate-900"
           >
             <svg
               className="w-5 h-5"
@@ -492,7 +546,7 @@ export function Footer() {
             </svg>
           </button>
           <button
-            className="text-gray-500 hover:text-gray-900"
+            className="text-slate-500 hover:text-slate-900"
           >
             <svg
               className="w-5 h-5"
@@ -504,7 +558,7 @@ export function Footer() {
             </svg>
           </button>
           <button
-            className="text-gray-500 hover:text-gray-900"
+            className="text-slate-500 hover:text-slate-900"
           >
             <svg
               className="w-5 h-5"
@@ -535,65 +589,13 @@ export function Icon() {
   );
 }
 
-export function Icon_Button_Left() {
-  return (
-    <button
-      className='h-12 px-4 flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white'
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
-      <span >Download</span>
-    </button>
-  );
-}
-
-export function Icon_Button_Right() {
-  return (
-    <button
-      className='h-12 px-4 flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white'
-    >
-      <span >Download</span>
-      <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
-    </button>
-  );
-}
-
-export function Loading_Button() {
-  return (
-    <button
-      className='h-12 px-4 flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white'
-    >
-      <div className="ml-2 animate-spin inline-block w-5 h-5 rounded-full border-t " ></div>
-      Loading
-    </button>
-  );
-}
-
 export function Floating_Label() {
   return (
     <div className="relative">
       <input
         type="text"
         id="floating_label"
-        className="block rounded px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
-        placeholder=" "
-      />
-      <label
-        htmlFor="floating_label"
-        className="absolute text-sm text-slate-600 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
-      >
-        User Name
-      </label>
-    </div>
-  );
-}
-
-export function Floating_Label_Outside() {
-  return (
-    <div className="relative">
-      <input
-        type="text"
-        id="floating_label"
-        className="block rounded px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+        className="block rounded px-2.5 pb-2.5 pt-5 w-full text-sm text-slate-900 bg-white border appearance-none focus:outline-none focus:ring-0 focus:border-slate-600 peer"
         placeholder=" "
       />
       <label
@@ -609,20 +611,37 @@ export function Floating_Label_Outside() {
 export function Header() {
   return (
     <header className="p-4 bg-sky-700">
-      <nav className="container mx-auto flex justify-between items-cente">
+      <nav className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold text-slate-50">LOGO</h1>
         <div className=" gap-10 text-slate-50 hidden lg:flex">
           <button className="flex items-center space-x-2"> Service </button>
           <button className="flex items-center space-x-2"> About</button>
           <button className="flex items-center space-x-2"> Career </button>
         </div>
-        <div className="items-center space-x-2 bg-white py-1 px-2 rounded-full hidden lg:flex">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        <div className="relative rounded-full hidden lg:flex">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg
+              className="w-4 h-4 text-slate-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
             </svg>
-          </span>
-          <input className="outline-none" type="text" placeholder="Search" />
+          </div>
+          <input
+            type="search"
+            id="search"
+            className="block w-full py-2 px-4 pl-10 text-sm text-slate-900 border border-slate-300 box-border outline-none rounded-full bg-slate-50 "
+            placeholder="Search "
+          />
         </div>
         <button className="lg:hidden">
           <svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -635,15 +654,27 @@ export function Header() {
 }
 
 export function Heading1() {
-  return <h1 className='mt-6'>Heading 1</h1>;
+  return <h1 className="text-6xl font-bold" >Heading 1</h1>;
 }
 
 export function Heading2() {
-  return <h2 className='mt-4'>Heading 2</h2>;
+  return <h2 className="text-5xl font-bold" >Heading 2</h2>;
 }
 
 export function Heading3() {
-  return <h3 className='mt-2'>Heading 3</h3>;
+  return <h3 className="text-4xl font-bold" >Heading 3</h3>;
+}
+
+export function Heading4() {
+  return <h4 className="text-3xl font-bold" >Heading 4</h4>;
+}
+
+export function Heading5() {
+  return <h5 className="text-2xl font-semibold" >Heading 5</h5>;
+}
+
+export function Heading6() {
+  return <h6 className="text-xl font-medium" >Heading 6</h6>;
 }
 
 export function Hero() {
@@ -657,8 +688,8 @@ export function Hero() {
           <p className="mt-5 sm:mt-10 lg:w-10/12 text-slate-500 font-normal text-center text-sm sm:text-lg">The seamless component building blocks for effortlessly crafting your perfect web application </p>
         </div>
         <div className="flex justify-center items-center">
-          <button className="  bg-sky-700 transition duration-150 ease-in-out hover:bg-sky-600 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-sky-700 py-2 sm:py-4 text-sm">Get Started</button>
-          <button className="ml-4   bg-transparent transition duration-150 ease-in-out hover:border-sky-600 lg:text-xl lg:font-bold  hover:text-sky-600 rounded border border-sky-700 text-sky-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">Book Demo</button>
+          <button className="bg-sky-700 transition duration-150 ease-in-out hover:bg-sky-600 lg:text-xl lg:font-bold rounded text-white px-4 sm:px-10 py-2 sm:py-4 text-sm">Get Started</button>
+          <button className="ml-4 bg-transparent transition duration-150 ease-in-out lg:text-xl lg:font-bold hover:text-sky-600 rounded border border-sky-700 hover:border-sky-600 text-sky-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">Book Demo</button>
         </div>
       </div>
     </section>
@@ -667,7 +698,7 @@ export function Hero() {
 
 export function Image() {
   return (
-    <div className='w-200 h-200 overflow-hidden rounded-lg border border-gray-500'>
+    <div className='w-200 h-200 overflow-hidden rounded-lg border border-slate-500'>
       <img
         src='https://source.unsplash.com/random/200x200'
         alt='Random'
@@ -679,7 +710,7 @@ export function Image() {
 
 export function Input() {
   return (
-    <input type="text" id="input" className="block w-full px-3 py-2 text-gray-900 border border-gray-300 rounded  focus:border-sky-500" />
+    <input type="text" id="input" className="block w-full px-3 py-2 text-slate-900 border border-slate-300 rounded  focus:border-sky-500" />
   );
 }
 
@@ -688,9 +719,15 @@ export function Notice_Modal() {
     <div className="pointer-events-none inset-x-0 px-6 pb-6">
       <div className="pointer-events-auto mx-auto max-w-xl rounded-xl bg-white p-6 shadow-lg ring-1 ring-slate-900/10">
         <p className="text-sm leading-6 text-slate-900">This site uses Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi veniam, eligendi inventore quis maxime quas totam. Atque delectus facilis nisi ea optio. Et nemo, nostrum quasi mollitia est minus?</p>
-        <div className="mt-4 flex items-center gap-x-5">
-          <button type="button" className="rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">Accept</button>
-          <button type="button" className="text-sm font-semibold leading-6 text-slate-900 shadow-sm ">Reject</button>
+        <div className="mt-4 flex items-center">
+          <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm rounded shadow">
+            Accept
+          </button>
+          <button
+            className="py-2 rounded transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-slate-800 text-sm"
+          >
+            Reject
+          </button>
         </div>
       </div>
     </div>
@@ -699,7 +736,7 @@ export function Notice_Modal() {
 
 export function Paragraph() {
   return (
-    <p className='mt-2 text-sm text-gray-800'>
+    <p className='mt-2 text-sm text-slate-800'>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -710,16 +747,16 @@ export function Paragraph() {
 
 export function Pricing_Card() {
   return (
-    <div className="bg-gray-100 min-h-screen py-12 flex items-center justify-center">
+    <div className="bg-slate-100 min-h-screen py-12 flex items-center justify-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 w-72">
           <div className="p-1 bg-sky-200" />
           <div className="p-8">
-            <h2 className="text-3xl font-bold text-gray-800">Pro</h2>
-            <p className="text-gray-600 my-2">Ideal For Large Businesses</p>
-            <p className="text-4xl font-bold text-gray-800 my-6">$20</p>
-            <ul className="text-sm text-gray-600 mb-6">
+            <h2 className="text-3xl font-bold text-slate-800">Pro</h2>
+            <p className="text-slate-600 my-2">Ideal For Large Businesses</p>
+            <p className="text-4xl font-bold text-slate-800 my-6">$20</p>
+            <ul className="text-sm text-slate-600 mb-6">
               <li className="mb-2 flex items-center">
                 <svg className="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -744,7 +781,8 @@ export function Pricing_Card() {
           </div>
           <div className="p-4">
             <button
-              className="w-full bg-sky-500 text-white rounded-full px-4 py-2 hover:bg-sky-700 focus:outline-none focus:shadow-outline-sky active:bg-sky-800">
+              className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold tracking-wider text-white shadow w-full"
+            >
               Get Started
             </button>
           </div>
@@ -756,21 +794,21 @@ export function Pricing_Card() {
 
 export function Profile_Card() {
   return (
-    <div className="relative p-4 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-      <div className="relative h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+    <div className="relative p-4 flex w-96 flex-col rounded-xl bg-white bg-clip-border text-slate-700 shadow-md">
+      <div className="relative h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-slate-700 shadow-lg">
         <img src="https://source.unsplash.com/random/200x200" className="w-full h-full" alt="profile-picture" />
       </div>
       <div className="p-6 text-center">
-        <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900">
+        <h4 className="mb-2 block  text-2xl font-semibold leading-snug tracking-normal text-sky-slate-900">
           ELizabeth Holmes
         </h4>
-        <p className="block bg-clip-text font-sans text-base font-medium leading-relaxed ">
+        <p className="block bg-clip-text  text-base font-medium leading-relaxed ">
           Detective
         </p>
       </div>
       <div className="flex gap-4 sm:justify-center">
         <button
-          className="text-gray-500 hover:text-gray-900 "
+          className="text-slate-500 hover:text-slate-900 "
         >
           <svg
             className="w-5 h-5"
@@ -786,7 +824,7 @@ export function Profile_Card() {
           </svg>
         </button>
         <button
-          className="text-gray-500 hover:text-gray-900"
+          className="text-slate-500 hover:text-slate-900"
         >
           <svg
             className="w-5 h-5"
@@ -802,7 +840,7 @@ export function Profile_Card() {
           </svg>
         </button>
         <button
-          className="text-gray-500 hover:text-gray-900"
+          className="text-slate-500 hover:text-slate-900"
         >
           <svg
             className="w-5 h-5"
@@ -814,7 +852,7 @@ export function Profile_Card() {
           </svg>
         </button>
         <button
-          className="text-gray-500 hover:text-gray-900"
+          className="text-slate-500 hover:text-slate-900"
         >
           <svg
             className="w-5 h-5"
@@ -842,7 +880,7 @@ export function Progress_Bar() {
         role="progressbar"
         aria-labelledby="ProgressLabel"
         aria-valuenow={80}
-        className="block rounded-full bg-gray-200"
+        className="block rounded-full bg-slate-200"
       >
         <span className="block h-4 rounded-full bg-sky-600 text-center text-[10px]/4" style={{ width: "80%" }}>
           <span className="font-bold text-white"> 80% </span>
@@ -857,7 +895,7 @@ export function Search() {
     <div className="relative">
       <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
         <svg
-          className="w-4 h-4 text-gray-500"
+          className="w-4 h-4 text-slate-500"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -874,8 +912,38 @@ export function Search() {
       </div>
       <input
         type="search"
-        id="default-search"
-        className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-0 focus:border-0 "
+        id="search"
+        className="block w-full px-4 py-3 pl-10 text-sm text-slate-900 border border-slate-300 rounded-lg bg-slate-50 outline-none box-border "
+        placeholder="Search "
+      />
+    </div>
+  );
+}
+
+export function Search_Rounded() {
+  return (
+    <div className="relative rounded-full">
+      <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        <svg
+          className="w-4 h-4 text-slate-500"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 20 20"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+          />
+        </svg>
+      </div>
+      <input
+        type="search"
+        id="search"
+        className="block w-full px-4 py-3 pl-10 text-sm text-slate-900 border border-slate-300 rounded-full bg-slate-50 outline-none box-border "
         placeholder="Search "
       />
     </div>
@@ -884,12 +952,12 @@ export function Search() {
 
 export function Select() {
   return (
-    <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
-      <option selected>Choose a country</option>
+    <select id="countries" className="bg-slate-50 border border-slate-300 outline-none text-slate-900 text-sm rounded-lg block w-full p-3">
+      <option selected>Choose your country</option>
       <option value="US">United States</option>
       <option value="CA">Canada</option>
       <option value="FR">France</option>
-      <option value="DE">Germany</option>
+      <option value="NG">Nigeria</option>
     </select>
   );
 }
@@ -899,7 +967,7 @@ export function TextArea() {
     <textarea
       id="message"
       rows={4}
-      className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+      className="block p-3 w-full text-sm text-slate-900 bg-slate-50 rounded-lg border border-slate-300 outline-sky-600 "
       placeholder="Write your thoughts here..."
     ></textarea>
   );
@@ -907,7 +975,7 @@ export function TextArea() {
 
 export function Subscription_Section() {
   return (
-    <div className="bg-sky-400 lg:py-16 py-10 w-full md:px-12 px-4 flex flex-col items-center justify-center relative z-40">
+    <section className="bg-sky-600 py-10 w-full px-4 flex flex-col items-center justify-center relative ">
       <h1 className="text-4xl font-semibold leading-9 text-white text-center">
         Stay Updated!
       </h1>
@@ -915,25 +983,25 @@ export function Subscription_Section() {
         Subscribe to your newsletter to get the latest update on your
         favourite product
       </p>
-      <div className="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
+      <div className="border border-white flex flex-col sm:flex-row items-center w-full lg:w-5/12 mt-12 ">
         <input
-          className="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white outline-none"
+          className="text-base w-full outline-none leading-none text-white px-3 py-2 lg:py-3 bg-transparent"
           placeholder="Email Address"
         />
-        <button className="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75">
+        <button className="focus:outline-none w-full bg-white px-3 py-2 lg:py-3 hover:bg-opacity-75">
           Subscribe
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 
 export function Success() {
   return (
-    <div className="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md">
+    <div className="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md flex flex-col items-center justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="mx-auto mt-8 h-16 w-16 text-sky-400"
+        className="mx-auto mt-8 h-16 w-16 text-sky-600"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -943,17 +1011,15 @@ export function Success() {
           clip-rule="evenodd"
         />
       </svg>
-      <h1 className="mt-2 text-center text-2xl font-bold text-gray-500">
+      <h1 className="mt-2 text-2xl font-bold text-slate-500">
         Success
       </h1>
-      <p className="my-4 text-center text-sm text-gray-500">
+      <p className="my-4 text-sm text-slate-500">
         Congratulations! Your request is successful
       </p>
-      <div className="space-x-4 py-4 text-center">
-        <button className="inline-block rounded-md bg-sky-500 px-6 py-2 font-semibold text-sky-100 shadow-md duration-75 hover:bg-sky-400">
-          Close
-        </button>
-      </div>
+      <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm text-center my-4 rounded shadow">
+        Close
+      </button>
     </div>
   );
 }
@@ -961,7 +1027,7 @@ export function Success() {
 export function Testimonial_Card() {
   return (
     <div className="px-3 border shadow rounded w-96">
-      <div className="w-full p-5 text-slate-800 font-light mb-6">
+      <div className="w-full p-5 text-slate-800  mb-6">
         <div className="w-full flex mb-4 items-center">
           <div className="overflow-hidden rounded-full w-10 h-10 bg-slate-50 border border-slate-200">
             <img src="https://i.pravatar.cc/100?img=5" alt="profile image" />
@@ -984,30 +1050,30 @@ export function Timeline() {
     <div className="bg-white p-6 w-full">
       <div className="space-y-6 border-l-2 border-dashed">
         <div className="relative w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-sky-600">
             <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
           </svg>
           <div className="ml-6">
-            <h4 className="font-bold text-blue-500">Step 1</h4>
-            <p className="mt-2 max-w-screen-sm text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet accusantium cum et numquam expedita repellendus a, animi exercitationem totam nulla enim quia, molestias ab tenetur, temporibus doloremque praesentium hic.</p>
+            <h4 className="font-bold text-sky-600">Step 1</h4>
+            <p className="mt-2 max-w-screen-sm text-sm text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet accusantium cum et numquam expedita repellendus a, animi exercitationem totam nulla enim quia, molestias ab tenetur, temporibus doloremque praesentium hic.</p>
           </div>
         </div>
         <div className="relative w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-sky-600">
             <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
           </svg>
           <div className="ml-6">
-            <h4 className="font-bold text-blue-500">Step 2</h4>
-            <p className="mt-2 max-w-screen-sm text-sm text-gray-500">Sapiente amet accusantium cum et numquam expedita repellendus a, animi exercitationem totam nulla enim quia, molestias ab tenetur, temporibus doloremque praesentium hic.</p>
+            <h4 className="font-bold text-sky-600">Step 2</h4>
+            <p className="mt-2 max-w-screen-sm text-sm text-slate-500">Sapiente amet accusantium cum et numquam expedita repellendus a, animi exercitationem totam nulla enim quia, molestias ab tenetur, temporibus doloremque praesentium hic.</p>
           </div>
         </div>
         <div className="relative w-full">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-sky-600">
             <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
           </svg>
           <div className="ml-6">
-            <h4 className="font-bold text-gray-500">Step 3</h4>
-            <p className="mt-2 max-w-screen-sm text-sm text-gray-500">Sapiente amet accusantium cum et numquam expedita repellendus a, animi exercitationem totam nulla enim quia, molestias ab tenetur, temporibus doloremque praesentium hic.</p>
+            <h4 className="font-bold text-slate-600">Step 3</h4>
+            <p className="mt-2 max-w-screen-sm text-sm text-slate-500">Sapiente amet accusantium cum et numquam expedita repellendus a, animi exercitationem totam nulla enim quia, molestias ab tenetur, temporibus doloremque praesentium hic.</p>
           </div>
         </div>
       </div>
@@ -1019,8 +1085,8 @@ export function Toggle() {
   return (
     <label className="relative inline-flex items-center cursor-pointer">
       <input type="checkbox" value="" className="sr-only peer" />
-      <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
-      <span className="ml-3 text-sm font-medium text-gray-900 ">Toggle me</span>
+      <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-600"></div>
+      <span className="ml-3 text-sm font-medium text-slate-900 ">Toggle me</span>
     </label>
   );
 }

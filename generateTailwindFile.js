@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const inputFilePath = 'src/Tailwind.jsx';
-const outputFilePath = 'src/Tailwind_purple.jsx';
+const outputFilePath = 'src/Tailwind_Purple.jsx';
 
 const tailwindContent = fs.readFileSync(inputFilePath, 'utf8');
 
