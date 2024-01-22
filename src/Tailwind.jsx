@@ -238,7 +238,7 @@ export function Avatar() {
 
 export function Button() {
   return (
-    <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm rounded shadow">
+    <button className="py-2 px-4  bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out  text-white text-sm rounded shadow">
       Button
     </button>
   );
@@ -246,14 +246,14 @@ export function Button() {
 
 export function Button_Large() {
   return (
-    <button className="bg-sky-600 transition duration-150 ease-in-out hover:bg-sky-700 lg:text-xl lg:font-bold rounded text-white px-4 sm:px-10 py-2 sm:py-4 text-sm">Button</button>
+    <button className="bg-sky-600 transition duration-150 ease-in-out hover:bg-sky-700 lg:text-xl rounded text-white px-10 py-4 text-sm">Button</button>
   );
 }
 
 export function Button_Outlined() {
   return (
     <button
-      className="py-2 rounded border border-sky-700 hover:border-sky-600 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-sky-800 text-sm"
+      className="py-2 px-4 rounded border border-sky-700 hover:border-sky-600 transition duration-300 ease-in-out  text-sky-800 text-sm"
     >
       Button
     </button>
@@ -263,7 +263,7 @@ export function Button_Outlined() {
 export function Button_Rounded() {
   return (
     <button
-      className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white shadow text-sm"
+      className="py-2 px-4 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out  text-white shadow text-sm"
     >
       Button
     </button>
@@ -273,7 +273,7 @@ export function Button_Rounded() {
 export function Button_Icon_Left() {
   return (
     <button
-      className="h-12 px-4 flex rounded items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
+      className="h-12 px-4 py-2 flex rounded items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
     >
       <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
       <span >Download</span>
@@ -284,7 +284,7 @@ export function Button_Icon_Left() {
 export function Button_Icon_Right() {
   return (
     <button
-      className="h-12 px-4 rounded flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
+      className="h-12 px-4 py-2 rounded flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
     >
       <span >Download</span>
       <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" fill="white" ><path d="M18.302,7.121c-1.349-3.121-4.38-5.121-7.802-5.121C5.813,2,2,5.813,2,10.5c0,.591,.061,1.18,.181,1.754-1.354,.871-2.181,2.369-2.181,3.996,0,2.619,2.131,4.75,4.75,4.75h12.25c3.86,0,7-3.141,7-7,0-3.355-2.43-6.263-5.698-6.879Zm-1.302,12.879H4.75c-2.068,0-3.75-1.683-3.75-3.75,0-1.387,.761-2.656,1.987-3.311l.346-.186-.098-.38c-.157-.609-.236-1.239-.236-1.874,0-4.136,3.364-7.5,7.5-7.5,3.103,0,5.843,1.865,6.98,4.752l.106,.27,.287,.042c2.923,.426,5.126,2.978,5.126,5.937,0,3.309-2.691,6-6,6Zm-1.854-7.439l.707,.707-3.293,3.293c-.292,.292-.676,.438-1.061,.438s-.768-.146-1.061-.438l-3.293-3.293,.707-.707,3.146,3.146v-7.707h1v7.707l3.146-3.146Z" /></svg>
@@ -295,7 +295,7 @@ export function Button_Icon_Right() {
 export function Button_Loading() {
   return (
     <button
-      className="h-12 px-4 rounded flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
+      className="h-12 px-4 py-2 rounded flex items-center gap-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out text-white text-sm"
     >
       <div className="ml-2 animate-spin inline-block w-5 h-5 rounded-full border-t " ></div>
       Loading
@@ -339,11 +339,11 @@ export function Dialog() {
       </div>
       <div className="flex gap-2 shrink-0 flex-wrap items-center justify-end text-sky-slate-500">
         <button
-          className="py-2 rounded transition duration-300 ease-in-out px-6 font-semibold text-sm tracking-wider text-red-800"
+          className="py-2 rounded transition duration-300 ease-in-out px-6 font-semibold text-sm  text-red-800"
         >
           Cancel
         </button>
-        <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm rounded shadow">
+        <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold  text-white text-sm rounded shadow">
           Confirm
         </button>
       </div>
@@ -381,7 +381,7 @@ export function Feature_Card() {
                 Integrate our prefab components effortlessly into your existing projects, enhancing functionality without the hassle.
               </p>
               <button
-                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold tracking-wider text-white shadow"
+                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold  text-white shadow"
               >
                 MORE
               </button>
@@ -402,7 +402,7 @@ export function Feature_Card() {
                 Integrate our prefab components effortlessly into your existing projects, enhancing functionality without the hassle.
               </p>
               <button
-                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold tracking-wider text-white shadow"
+                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold  text-white shadow"
               >
                 MORE
               </button>
@@ -423,7 +423,7 @@ export function Feature_Card() {
                 Maintain high performance standards with components that are optimized for speed and efficiency
               </p>
               <button
-                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 inline font-semibold tracking-wider text-white shadow"
+                className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 inline font-semibold  text-white shadow"
               >
                 MORE
               </button>
@@ -673,9 +673,9 @@ export function Hero() {
           </h1>
           <p className="mt-5 sm:mt-10 lg:w-10/12 text-slate-500 font-normal text-center text-sm sm:text-lg">The seamless component building blocks for effortlessly crafting your perfect web application </p>
         </div>
-        <div className="flex justify-center items-center">
-          <button className="bg-sky-600 transition duration-150 ease-in-out hover:bg-sky-700 lg:text-xl lg:font-bold rounded text-white px-4 sm:px-10 py-2 sm:py-4 text-sm">Get Started</button>
-          <button className="ml-4 bg-transparent transition duration-150 ease-in-out lg:text-xl lg:font-bold hover:text-sky-600 rounded border border-sky-700 hover:border-sky-600 text-sky-700 px-4 sm:px-10 py-2 sm:py-4 text-sm">Book Demo</button>
+        <div className="flex justify-center items-center gap-3">
+          <button className="px-10 py-4 rounded border bg-sky-600 transition duration-150 ease-in-out hover:bg-sky-700 text-white test-sm lg:text-xl">Get Started</button>
+          <button className="px-10 py-4 rounded border border-sky-700 hover:border-sky-600 transition duration-150 ease-in-out text-sky-800 test-sm lg:text-xl">Book Demo</button>
         </div>
       </div>
     </section>
@@ -778,11 +778,11 @@ export function Notice_Modal() {
       <div className="pointer-events-auto mx-auto max-w-xl rounded-xl bg-white p-6 shadow-lg ring-1 ring-slate-900/10">
         <p className="text-sm leading-6 text-slate-900">This site uses Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi veniam, eligendi inventore quis maxime quas totam. Atque delectus facilis nisi ea optio. Et nemo, nostrum quasi mollitia est minus?</p>
         <div className="mt-4 flex items-center">
-          <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm rounded shadow">
+          <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold  text-white text-sm rounded shadow">
             Accept
           </button>
           <button
-            className="py-2 rounded transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-slate-800 text-sm"
+            className="py-2 rounded transition duration-300 ease-in-out px-6 font-semibold  text-slate-800 text-sm"
           >
             Reject
           </button>
@@ -839,7 +839,7 @@ export function Pricing_Card() {
           </div>
           <div className="p-4">
             <button
-              className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold tracking-wider text-white shadow w-full"
+              className="py-2 rounded-full bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-8 font-semibold  text-white shadow w-full"
             >
               Get Started
             </button>
@@ -971,7 +971,7 @@ export function Search() {
       <input
         type="search"
         id="search"
-        className="block w-full px-4 py-3 pl-10 text-sm text-slate-900 border border-slate-300 rounded-lg bg-slate-50 outline-none box-border "
+        className="block w-full px-4 py-3 pl-10 text-sm text-slate-900 border border-slate-300 rounded bg-slate-50 outline-none box-border "
         placeholder="Search "
       />
     </div>
@@ -1010,13 +1010,33 @@ export function Search_Rounded() {
 
 export function Select() {
   return (
-    <select id="countries" className="bg-slate-50 border border-slate-500 outline-none text-slate-900 text-sm rounded-lg block w-full p-3">
-      <option selected>Choose your country</option>
-      <option value="US">United States</option>
-      <option value="CA">Canada</option>
-      <option value="FR">France</option>
-      <option value="NG">Nigeria</option>
-    </select>
+    <div className="relative z-20 bg-slate-50">
+      <select className="relative z-20 w-full appearance-none rounded border border-slate-300 bg-slate-50 py-3 px-5 outline-none transition text-sm">
+        <option value="">Select your country</option>
+        <option value="">USA</option>
+        <option value="">UK</option>
+        <option value="">Canada</option>
+      </select>
+      <span className="absolute top-1/2 right-4 z-30 -translate-y-1/2">
+        <svg
+          className="fill-current"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.8">
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"
+              fill=""
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </div>
   );
 }
 
@@ -1075,7 +1095,7 @@ export function Success() {
       <p className="my-4 text-sm text-slate-500">
         Congratulations! Your request is successful
       </p>
-      <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold tracking-wider text-white text-sm text-center my-4 rounded shadow">
+      <button className="py-2 bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in-out px-6 font-semibold  text-white text-sm text-center my-4 rounded shadow">
         Close
       </button>
     </div>
