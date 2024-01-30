@@ -31,9 +31,6 @@ const META = {
 		}
 	},
 	Tailwind: {
-		Accordion_2: {
-			width: 'full'
-		},
 		Feature_Card: {
 			width: 'full'
 		},
